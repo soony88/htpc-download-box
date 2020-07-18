@@ -86,8 +86,8 @@ services:
       - ${ROOT}/downloads:/downloads # download folder
 
   plex-server:
-    container_name: plex-server
-    image: plexinc/pms-docker:latest
+    container_name: plex
+    image: linuxserver/plex
     restart: unless-stopped
     environment:
       - TZ=${TZ} # timezone, defined in .env
